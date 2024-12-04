@@ -1,148 +1,78 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
     <style>
-        /* 设定页面基本样式 */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-
-        /* 页面容器样式 */
         .container {
             max-width: 900px;
-            margin: 30px auto;
+            margin: 50px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        /* 标题样式 */
         h2 {
             text-align: center;
             color: #333;
-            font-size: 2rem;
-            margin-bottom: 20px;
         }
-
-        h3 {
-            color: #333;
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+        .question {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-left: 5px solid #4CAF50;
         }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        /* 按钮样式 */
-        form {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        input[type="submit"] {
-            background-color: #007BFF;
-            color: white;
-            padding: 12px 20px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        /* 额外的文字内容区块样式 */
-        .content {
-            margin-top: 30px;
-        }
-
-        .content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .content p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        /* 小屏设备优化 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            input[type="submit"] {
-                font-size: 1rem;
-                padding: 10px 15px;
-            }
+        .answer {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-left: 5px solid #2196F3;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2>Main</h2>
+        <h2>AI and Cloud Technology Insights</h2>
+        
+        <div class="question">
+            <strong>1. How do cloud platforms enable the storage and processing of large datasets required for real-world AI projects?</strong>
+        </div>
+        <div class="answer">
+            Cloud platforms support AI projects in handling large datasets by providing distributed storage, elastic computing resources, and efficient data processing tools. They dynamically adjust resources based on needs, rapidly process data via high-performance networks, and reduce costs with a pay-as-you-go model. These features make cloud platforms particularly valuable and effective for AI projects that require handling extensive data.
+        </div>
 
-        <!-- 按钮表单 -->
-        <form action="/" method="post">
-            <p><input type="submit" value="Generate AI"></p>
-        </form>
-        <form action="/" method="post">
-            <p><input type="submit" value="End Process"></p>
-        </form>
+        <div class="question">
+            <strong>2. Why are web applications essential for providing user-friendly interfaces to deploy and interact with AI models?</strong>
+        </div>
+        <div class="answer">
+            Web applications create intuitive interfaces to simplify complex technical processes, enabling non-technical users to easily use complex AI technologies without specialized technical expertise. For example, through browser interfaces, users can directly upload data, select models, and view results, significantly lowering the technical usage threshold. Web applications also run on any device and operating system, and provide instant feedback, allowing users to observe the AI model's processing and output results in real-time.
+        </div>
 
-        <!-- 主要内容 -->
-        <div class="content">
-            <h3>1. How do cloud platforms enable the storage and processing of large datasets required for real-world AI projects?</h3>
-            <p>
-                Cloud platforms support AI projects in handling large datasets by providing distributed storage, elastic computing resources, and efficient data processing tools. They dynamically adjust resources based on needs, rapidly process data via high-performance networks, and reduce costs with a pay-as-you-go model. These features make cloud platforms particularly valuable and effective for AI projects that require handling extensive data.
-            </p>
+        <div class="question">
+            <strong>3. How do cloud services support the scalability of AI projects when handling high volumes of real-time data?</strong>
+        </div>
+        <div class="answer">
+            Cloud services support scalability by providing dynamically adjustable computing resources and extensive storage solutions. They can accommodate fluctuating demands of real-time data, offering tools specifically designed for rapid data processing and analytics, ensuring that AI applications operate efficiently.
+        </div>
 
-            <h3>2. Why are web applications essential for providing user-friendly interfaces to deploy and interact with AI models?</h3>
-            <p>
-                Web applications create intuitive interfaces to simplify complex technical processes, enabling non-technical users to easily use complex AI technologies without specialized technical expertise. For example, through browser interfaces, users can directly upload data, select models, and view results, significantly lowering the technical usage threshold. Web applications also run on any device and operating system without the need for specific software. They provide real-time feedback and allow users to interact with AI model results.
-            </p>
+        <div class="question">
+            <strong>4. How do web applications facilitate the integration of AI models into end-user environments for real-world applications?</strong>
+        </div>
+        <div class="answer">
+            Web applications facilitate the integration of AI models into real-world applications by offering an accessible interface that connects end-user environments to cloud-deployed AI capabilities. Developers embed AI functionalities directly into web applications, enabling user interaction with features like personalized recommendations and automated customer service. APIs allow real-time data exchanges between web apps and AI models, ensuring a seamless experience.
+        </div>
 
-            <h3>3. How do cloud services support the scalability of AI projects when handling high volumes of real-time data?</h3>
-            <p>
-                Cloud services support the scalability of AI projects by providing dynamically adjustable computing resources and extensive storage solutions. These services can be tailored to accommodate fluctuating demands of real-time data volumes, ensuring that AI applications operate efficiently and effectively with high data throughput.
-            </p>
-
-            <h3>4. How do web applications facilitate the integration of AI models into end-user environments for real-world applications?</h3>
-            <p>
-                Web applications connect end-users to cloud-deployed AI models, making integration seamless. Developers embed AI functionalities into web apps, enabling personalized features such as recommendations and automated customer service. APIs enable real-time data exchanges, ensuring that the system remains dynamic and responsive.
-            </p>
-
-            <h3>5. How do cloud-based AI services simplify model training, deployment, and monitoring in real-world scenarios?</h3>
-            <p>
-                Cloud-based AI services streamline training, deployment, and monitoring by providing scalable resources and integrated management tools. These platforms allow on-demand scalability for model training, with one-click deployment options for transitioning models into production. They also feature real-time monitoring tools, tracking performance and resource use to ensure any issues are quickly resolved.
-            </p>
+        <div class="question">
+            <strong>5. How do cloud-based AI services simplify model training, deployment, and monitoring in real-world scenarios?</strong>
+        </div>
+        <div class="answer">
+            Cloud-based AI services streamline training, deployment, and monitoring by providing scalable computing resources and integrated management tools. These platforms offer on-demand scalability, allowing data scientists to expand or reduce resources as needed, eliminating the need for costly on-premises hardware. Real-time monitoring tools ensure model performance is tracked, and any issues can be quickly addressed.
         </div>
     </div>
 </body>
+
 
